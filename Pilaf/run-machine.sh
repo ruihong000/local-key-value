@@ -1,3 +1,4 @@
+#!/bin/bash
 num_processes=16
 export ROCE=0
 export APT=1
