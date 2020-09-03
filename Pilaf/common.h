@@ -181,6 +181,6 @@ void micro_sleep(double microseconds);
 void set_signal(int num, struct ctrl_blk *cb);
 void poll_cq(struct ibv_cq *cq, int num_completions);
 int is_roce(void);
-inline uint32_t fastrand(uint64_t* seed);
+uint32_t fastrand(uint64_t* seed);
 
 #endif /* IBV_PINGPONG_H */
