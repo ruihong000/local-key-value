@@ -12,6 +12,7 @@
 #include <arpa/inet.h> 
 #include <time.h>
 #include "size.h"
+#include <errno.h>
 #ifndef IBV_PINGPONG_H
 #define IBV_PINGPONG_H
 #include <infiniband/verbs.h>

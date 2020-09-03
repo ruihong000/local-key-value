@@ -156,7 +156,8 @@ void server_exch_dest(struct ctrl_blk *cb)
 	serv_addr.sin_port = htons(cb->sock_port);
 
 	if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) {
-		fprintf(stderr, "ERROR on binding");
+		fprintf(stderr, "ERROR on binding ");
+		printf("Error code: %d\n", errno);
 			exit(0);
 	}
 //	printf("Server %d listening on port %d\n", cb->id, cb->sock_port);

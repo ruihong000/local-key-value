@@ -1,6 +1,6 @@
 PHONY: clean
 
-CFLAGS  := -O3 -Wall -Wno-unused-result
+CFLAGr  := -O3 -Wall -Wno-unused-result -Werror
 LD      := gcc
 LDFLAGS := ${LDFLAGS} -lrdmacm -libverbs -lrt -lpthread
 
