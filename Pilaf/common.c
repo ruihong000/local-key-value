@@ -111,7 +111,7 @@ void create_qp(struct ctrl_blk *ctx)
 		uc_init_attr.qp_type = IBV_QPT_RC;
 		
 		ctx->rc_qp[i] = ibv_create_qp(ctx->pd, &uc_init_attr);
-		//fprintf(stderr,"%s\n",strerror(errno));
+		fprintf(stderr,"%s\n",strerror(errno));
 		CPE(!ctx->rc_qp[i], "Couldn't create connected QP", 0);
 	}
 }

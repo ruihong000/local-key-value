@@ -33,8 +33,8 @@
 
 #define PILAF_MAX_SIZE MAX(PILAF_BKT_SIZE, PILAF_ITEM_SIZE)
 
-#define Q_DEPTH 2048
-#define S_DEPTH 1024
+#define Q_DEPTH 1024
+#define S_DEPTH 512
 
 #define WS_SERVER 1    //6
 #define WS_SERVER_ 1   //5

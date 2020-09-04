@@ -607,7 +607,7 @@ int main(int argc, char *argv[])
 	
 	ctx->id = atoi(argv[1]);
 
-	if (argc == 2) {
+	if (argc == 4) {
 		ctx->is_client = 1;
 		ctx->num_conns = NUM_SERVERS;
 
@@ -624,7 +624,7 @@ int main(int argc, char *argv[])
 	} else {
 		
 		
-		
+		ctx->is_client = 0;
 		ctx->sock_port = atoi(argv[2]);
 		ctx->num_conns = NUM_CLIENTS;
 
