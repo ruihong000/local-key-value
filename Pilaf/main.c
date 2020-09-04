@@ -607,7 +607,7 @@ int main(int argc, char *argv[])
 	
 	ctx->id = atoi(argv[1]);
 
-	if (argc == 4) {
+	if (argc == 2) {
 		ctx->is_client = 1;
 		ctx->num_conns = NUM_SERVERS;
 
